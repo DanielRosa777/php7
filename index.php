@@ -9,10 +9,18 @@
 
     //$lista = Usuario::search("jo");
 
-    $usuario = new Usuario();
-    $usuario->login("daniel","123456");
+    //$usuario = new Usuario();
+    //$usuario->login("daniel","123456");
 
-    echo $usuario;
+    //$aluno = new Usuario("novo", "123456");
+    //$aluno->insert();
+
+    $user = new Usuario();
+    $user->loadById(14);
+
+    $user->update("professor","1234567890");
+
+    echo $user;
 
 
 ?>
