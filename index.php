@@ -15,11 +15,15 @@
     //$aluno = new Usuario("novo", "123456");
     //$aluno->insert();
 
-    $user = new Usuario();
+    /*$user = new Usuario();
     $user->loadById(14);
 
-    $user->update("professor","1234567890");
+    $user->update("professor","1234567890");*/
 
+    $user = new Usuario();
+    $user->loadById(14);
+    $user->delete();
+    
     echo $user;
 
 
