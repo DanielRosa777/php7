@@ -1,11 +1,18 @@
 <?php
     require_once("config.php");
 
-    $root = new Usuario();
+    //$root = new Usuario();
 
-    $root->loadById(9);
+    //$root->loadById(9);
 
-    echo $root;
+    //$lista = Usuario::getList();
+
+    //$lista = Usuario::search("jo");
+
+    $usuario = new Usuario();
+    $usuario->login("daniel","123456");
+
+    echo $usuario;
 
 
 ?>

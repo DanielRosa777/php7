@@ -14,7 +14,7 @@
             }
         }
 
-        private function setParam($statment, $key, $value){
+        private static function setParam($statment, $key, $value){
             $statment->bindParam($key, $value);
         }
 
